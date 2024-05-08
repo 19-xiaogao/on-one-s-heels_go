@@ -9,4 +9,5 @@ var (
 	ServerSetting   *settings.ServerSetting
 	DatabaseSetting *settings.DataBaseSetting
 	DBEngine        *gorm.DB
+	UniSwapSetting  *settings.UniSwapSetting
 )

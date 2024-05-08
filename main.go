@@ -41,11 +41,13 @@ func setupSetting() error {
 	if err != nil {
 		return err
 	}
+	err = setting.ReadSection("Database", &global.DatabaseSetting)
+
 	if err != nil {
 		return err
 	}
-	err = setting.ReadSection("Database", &global.DatabaseSetting)
 
+	err = setting.ReadSection("UniSwap", &global.UniSwapSetting)
 	if err != nil {
 		return err
 	}

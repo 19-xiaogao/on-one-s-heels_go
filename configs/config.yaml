@@ -14,3 +14,9 @@ Database:
   ParseTime: True
   MaxIdleConns: 10
   MaxOpenConns: 30
+UniSwap:
+  Rpc: wss://rinkeby.infura.io/ws
+  WEthAddress : 0xadfaf
+  PositionManagerAddress: 0x1adslkfjalsfjalsdf
+  SwapRouterAddress : 0xasdlfjalsfjasdfaf
+

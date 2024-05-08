@@ -24,6 +24,13 @@ type DataBaseSetting struct {
 	MaxOpenCons int
 }
 
+type UniSwapSetting struct {
+	Rpc                    string
+	WEthAddress            string
+	PositionManagerAddress string
+	SwapRouterAddress      string
+}
+
 type Setting struct {
 	vp *viper.Viper
 }
