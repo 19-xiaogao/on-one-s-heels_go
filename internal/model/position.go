@@ -1,8 +1,9 @@
 package model
 
-import "gorm.io/gorm"
+import "github.com/jinzhu/gorm"
 
 type Position struct {
+	CommonModel
 	TokenId                  uint64
 	Liquidity                uint32
 	Amount0                  uint64
