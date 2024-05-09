@@ -1,13 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"
 	"on_one_heels_go/global"
 	"on_one_heels_go/internal/model"
-	"on_one_heels_go/internal/routers"
 	"on_one_heels_go/pkg/settings"
+	"on_one_heels_go/uniswap/subscribe"
 )
 
 func init() {
@@ -24,12 +23,18 @@ func init() {
 
 func main() {
 	gin.SetMode(global.ServerSetting.RunMode)
-	router := routers.NewRouter()
-	err := router.Run(":" + global.ServerSetting.HttpPort)
+	//router := routers.NewRouter()
+	//
+	//err := router.Run(":" + global.ServerSetting.HttpPort)
+	//if err != nil {
+	//	fmt.Println(err)
+	//	return
+	//}
+	newSubscribe, err := subscribe.NewSubscribe()
 	if err != nil {
-		fmt.Println(err)
 		return
 	}
+	newSubscribe.SubscribeIncreaseLiquidityEvent()
 }
 
 func setupSetting() error {

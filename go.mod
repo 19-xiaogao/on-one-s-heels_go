@@ -1,6 +1,8 @@
 module on_one_heels_go
 
-go 1.20
+go 1.21
+
+toolchain go1.22.3
 
 require (
 	github.com/ethereum/go-ethereum v1.14.0

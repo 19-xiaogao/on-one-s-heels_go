@@ -15,8 +15,8 @@ Database:
   MaxIdleConns: 10
   MaxOpenConns: 30
 UniSwap:
-  Rpc: wss://rinkeby.infura.io/ws
+  Rpc: wss://mainnet.gateway.tenderly.co
   WEthAddress : 0xadfaf
-  PositionManagerAddress: 0x1adslkfjalsfjalsdf
-  SwapRouterAddress : 0xasdlfjalsfjasdfaf
+  PositionManagerAddress: 0xc36442b4a4522e871399cd717abdd847ab11fe88
+  SwapRouterAddress : 0xe592427a0aece92de3edee1f18e0157c05861564
 
